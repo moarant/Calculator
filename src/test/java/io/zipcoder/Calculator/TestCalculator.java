@@ -94,7 +94,7 @@ public class TestCalculator {
 
 
         //: When
-        double actualResult= calculator.squareRoot(a);
+        double actualResult= calculator.calculateSquareRoot(a);
 
         //: Then
         Assert.assertEquals("should return the square root of number", expectedResult, actualResult, 0);
@@ -111,7 +111,7 @@ public class TestCalculator {
 
 
         //: When
-        double actualResult= calculator.squareNumber(a);
+        double actualResult= calculator.calculateSquareNumber(a);
 
         //: Then
         Assert.assertEquals("should return the square of a number", expectedResult, actualResult, 0);

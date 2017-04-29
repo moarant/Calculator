@@ -25,12 +25,12 @@ public class Calculator {
         result=a/b;
         return result;
     }
-    public double squareRoot(double a){
+    public double calculateSquareRoot(double a){
         double result=0;
         result=Math.sqrt(a);
         return result;
     }
-    public double squareNumber(double a){
+    public double calculateSquareNumber(double a){
         double result=0;
         result= a*a;
         return result;
