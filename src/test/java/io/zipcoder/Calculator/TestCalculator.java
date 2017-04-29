@@ -23,7 +23,7 @@ public class TestCalculator {
 
         //: Then
 
-        // ... The result should be the sum of the grade values and divided by # of grades
+
         Assert.assertEquals("should return sum of a+b", expectedResult, actualResult);
 
 
@@ -31,7 +31,7 @@ public class TestCalculator {
 
     @Test
     public void testSubtract() {
-        //: Given:  given that two numbers are added together
+        //: Given:  given that a number is being taken away from another
         int a = 6;
         int b= 4;
         int expectedResult=2;
@@ -43,7 +43,6 @@ public class TestCalculator {
 
         //: Then
 
-        // ... The result should be the sum of the grade values and divided by # of grades
         Assert.assertEquals("should return a-b", expectedResult, actualResult);
 
 
@@ -51,7 +50,7 @@ public class TestCalculator {
 
     @Test
     public void testmultiply() {
-        //: Given:  given that two numbers are added together
+        //: Given:  given that two numbers are being multiplied together
         int a = 11;
         int b= 2;
         int expectedResult=22;
@@ -63,11 +62,116 @@ public class TestCalculator {
 
         //: Then
 
-        // ... The result should be the sum of the grade values and divided by # of grades
         Assert.assertEquals("should return the product of a and b", expectedResult, actualResult);
 
 
     }
+
+    @Test
+    public void testdivide() {
+        //: Given:  given that a number is being divided by another
+        int a = 18;
+        int b= 3;
+        int expectedResult=6;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.divide(a, b);
+
+        //: Then
+        Assert.assertEquals("should divide a by b", expectedResult, actualResult);
+
+
+    }
+
+    @Test
+    public void squareRoot() {
+        //: Given:
+        int a = 16;
+        int expectedResult=4;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        double actualResult= calculator.squareRoot(a);
+
+        //: Then
+        Assert.assertEquals("should return the square root of number", expectedResult, actualResult, 0);
+
+
+    }
+
+    @Test
+    public void squareNumber() {
+        //: Given:  given that you are multiplying a number by itself
+        int a = 3;
+        int expectedResult=9;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        double actualResult= calculator.squareNumber(a);
+
+        //: Then
+        Assert.assertEquals("should return the square of a number", expectedResult, actualResult, 0);
+
+
+    }
+    @Test
+    public void variableExponentiation() {
+        //: Given:  given that you have two numbers and are raising the first to the power of the second
+        int a = 2;
+        int b=4;
+        int expectedResult=16;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        double actualResult= calculator.calculateVariableExponentiation(a, b);
+
+        //: Then
+        Assert.assertEquals("should return a number raised to the power of another", expectedResult, actualResult, 0);
+
+
+    }
+    @Test
+    public void calculateInverse() {
+        //: Given:  given that you are raising a number to the -1 power
+        double a = 14;
+        double expectedResult=.0714;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        double actualResult= calculator.calculateInverse(a);
+
+        //: Then
+
+        // ... The result should be the inputted number raised to the -1 power
+        Assert.assertEquals("should return the inverse of the number", expectedResult, actualResult, 0.01);
+
+
+    }
+    @Test
+    public void calculateAdditiveInverse() {
+        //: Given:  given that you are raising a number to the -1 power
+        int a = 12;
+        int expectedResult=-12;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.calculateAdditiveInverse(a);
+
+        //: Then
+
+        // ... The result should be the the same number, but the inverse
+        Assert.assertEquals("should return the additive inverse of a number", expectedResult, actualResult);
+
+
+    }
+
 
 
 

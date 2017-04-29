@@ -3,6 +3,7 @@ package io.zipcoder.Calculator;
 /**
  * Created by mollyarant on 4/28/17.
  */
+import static java.lang.Math.*;
 public class Calculator {
     public int add(int a, int b){
         int result=0;
@@ -19,6 +20,38 @@ public class Calculator {
         result=a*b;
         return result;
     }
+    public int divide(int a, int b){
+        int result=0;
+        result=a/b;
+        return result;
+    }
+    public double squareRoot(double a){
+        double result=0;
+        result=Math.sqrt(a);
+        return result;
+    }
+    public double squareNumber(double a){
+        double result=0;
+        result= a*a;
+        return result;
+    }
+    public double calculateVariableExponentiation(double a, double b){
+        double result=0;
+        result= Math.pow(a,b);
+        return result;
+    }
+    public double calculateInverse(double a){
+        double result=0;
+        result= Math.pow(a, -1);
+        return result;
+    }
+    public int calculateAdditiveInverse(int a){
+        int result=0;
+        result=a*-1;
+        return result;
+    }
+
+
 
 
 
