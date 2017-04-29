@@ -77,10 +77,10 @@ public class TestCalculator {
 
 
         //: When
-        int actualResult= calculator.divide(a, b);
+        double actualResult= calculator.divide(a, b);
 
         //: Then
-        Assert.assertEquals("should divide a by b", expectedResult, actualResult);
+        Assert.assertEquals("should divide a by b", expectedResult, actualResult, 0);
 
 
     }
