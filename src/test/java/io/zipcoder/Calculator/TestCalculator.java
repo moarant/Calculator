@@ -70,9 +70,9 @@ public class TestCalculator {
     @Test
     public void testdivide() {
         //: Given:  given that a number is being divided by another
-        int a = 18;
-        int b= 3;
-        int expectedResult=6;
+        int a = 9;
+        int b= 2;
+        double expectedResult=4.5;
         Calculator calculator = new Calculator();
 
 

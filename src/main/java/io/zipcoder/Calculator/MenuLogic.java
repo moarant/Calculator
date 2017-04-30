@@ -7,10 +7,16 @@ public class MenuLogic {
     Calculator calc ;
     Instruction instruction;
 
+
     public MenuLogic(){
         calc = new Calculator();
         instruction= new Instruction();
+
+
+
     }
+
+
 
     public void menuChoice (int choice){
         switch(choice){
@@ -50,8 +56,9 @@ public class MenuLogic {
                 performAdditiveInverse();
                 break;
 
+
             default:
-                System.out.println("Please input a number between 1 and 9");
+                System.out.println("Please input a number between 1 and 10");
                 break;
         }
     }

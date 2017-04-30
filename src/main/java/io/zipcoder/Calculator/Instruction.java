@@ -9,8 +9,11 @@ public class Instruction {
         input = new Input();
     }
 
+
+
     public void tellMenuChoice(){
-        System.out.println("Choose a menu option:\n" +
+        System.out.println("Welcome to the calculator!\n" +
+                "Choose a menu option:\n" +
                 "1: Add\n" +
                 "2: Subtract\n" +
                 "3: Multiply\n" +
@@ -19,7 +22,7 @@ public class Instruction {
                 "6: Square a number\n"+
                 "7:Calculate Variable Exponentiation\n" +
                 "8:Calculate Inverse\n" +
-                "9:Calculate Additive Inverse\n");
+                "9:Calculate Additive Inverse");
 
 
     }

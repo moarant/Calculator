@@ -5,13 +5,12 @@ package io.zipcoder.Calculator;
  */
 public class Main {
     public static void main(String[] args) {
-        Instruction instruction = new Instruction();
-        Input input = new Input();
-        MenuLogic logic= new MenuLogic();
+        Engine engine= new Engine();
 
 
-        instruction.tellMenuChoice();
-        logic.menuChoice(input.takeUserInt());
+        engine.runEngine();
+
+
 
     }
 }

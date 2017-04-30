@@ -31,7 +31,7 @@ public class Calculator {
         display.print("Final answer \n" + result);
         return result;
     }
-    public double divide(int a, int b){
+    public double divide(double a, double b){
         double result=0;
         result=a/b;
         display.print("Final answer \n" + result);
