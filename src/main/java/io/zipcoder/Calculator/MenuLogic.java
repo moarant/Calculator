@@ -6,16 +6,22 @@ package io.zipcoder.Calculator;
 public class MenuLogic {
     Calculator calc ;
     Instruction instruction;
-
+    boolean run=true;
 
     public MenuLogic(){
         calc = new Calculator();
         instruction= new Instruction();
 
 
-
     }
 
+    public boolean getRun(){
+        return run;
+    }
+
+    public void setRun(boolean newRun){
+        run= newRun;
+    }
 
 
     public void menuChoice (int choice){
@@ -56,6 +62,9 @@ public class MenuLogic {
                 performAdditiveInverse();
                 break;
 
+            case 10:
+                setRun(false);
+                break;
 
             default:
                 System.out.println("Please input a number between 1 and 10");

@@ -11,6 +11,13 @@ public class Instruction {
 
 
 
+    public void tellClearValue(){
+        System.out.println("Current Value: \n" +
+                "0");
+
+
+    }
+
     public void tellMenuChoice(){
         System.out.println("Welcome to the calculator!\n" +
                 "Choose a menu option:\n" +
@@ -22,7 +29,8 @@ public class Instruction {
                 "6: Square a number\n"+
                 "7:Calculate Variable Exponentiation\n" +
                 "8:Calculate Inverse\n" +
-                "9:Calculate Additive Inverse");
+                "9:Calculate Additive Inverse\n" +
+                "10: Exit Calculator");
 
 
     }

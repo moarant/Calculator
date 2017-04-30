@@ -86,7 +86,23 @@ public class TestCalculator {
     }
 
     @Test
-    public void squareRoot() {
+    public void testDivideByZero(){
+        //Given
+        int a=12;
+        int b =0;
+        Double expectedResult= Double.NaN;
+        Calculator calculator = new Calculator();
+
+        //when
+        double actualResult= calculator.divide(a,b);
+
+        //then
+        Assert.assertEquals("You cannot divide a number by zero", expectedResult, actualResult, 0);
+
+    }
+
+    @Test
+    public void testSquareRoot() {
         //: Given:
         int a = 16;
         int expectedResult=4;
@@ -103,7 +119,7 @@ public class TestCalculator {
     }
 
     @Test
-    public void squareNumber() {
+    public void testSquareNumber() {
         //: Given:  given that you are multiplying a number by itself
         int a = 3;
         int expectedResult=9;
@@ -119,7 +135,7 @@ public class TestCalculator {
 
     }
     @Test
-    public void variableExponentiation() {
+    public void testVariableExponentiation() {
         //: Given:  given that you have two numbers and are raising the first to the power of the second
         int a = 2;
         int b=4;
@@ -153,6 +169,26 @@ public class TestCalculator {
 
 
     }
+
+    @Test
+    public void calculateInverseWithZero() {
+        //: Given:  given that you are raising a number to the -1 power
+        double a = 0;
+        double expectedResult=Double.NaN;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        double actualResult= calculator.calculateInverse(a);
+
+        //: Then
+
+        // ... The result should be the inputted number raised to the -1 power
+        Assert.assertEquals("should return 'not a number'", expectedResult, actualResult, 0.01);
+
+
+    }
+
     @Test
     public void calculateAdditiveInverse() {
         //: Given:  given that you are raising a number to the -1 power

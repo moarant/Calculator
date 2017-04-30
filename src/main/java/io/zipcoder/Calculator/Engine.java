@@ -16,14 +16,15 @@ package io.zipcoder.Calculator;
     }
 
 
-
-
     public void runEngine() {
-
+        while (logic.getRun()) {
+            instruction.tellClearValue();
             instruction.tellMenuChoice();
             logic.menuChoice(input.takeUserInt());
 
-    }
+        }
 
     }
+
+}
 

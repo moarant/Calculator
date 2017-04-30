@@ -33,6 +33,10 @@ public class Calculator {
     }
     public double divide(double a, double b){
         double result=0;
+        if (b==0){
+            display.print("Err");
+            return Double.NaN;
+        }
         result=a/b;
         display.print("Final answer \n" + result);
         return result;
@@ -57,6 +61,10 @@ public class Calculator {
     }
     public double calculateInverse(double a){
         double result=0;
+        if (a==0){
+            display.print("Err");
+            return Double.NaN;
+        }
         result= Math.pow(a, -1);
         display.print("Final answer \n" + result);
         return result;

@@ -6,15 +6,15 @@ package io.zipcoder.Calculator;
 public class Display {
 
     public void print(String output){
-        System.out.print(output);
+        System.out.println(output);
     }
 
     public void printNumber (int output){
-        System.out.print(output);
+        System.out.println(output);
     }
 
     public void printDouble (double output){
-        System.out.print(output);
+        System.out.println(output);
     }
 
 
