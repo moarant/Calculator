@@ -30,6 +30,46 @@ public class TestCalculator {
     }
 
     @Test
+    public void testAddWithNegative() {
+        //: Given:  given that two numbers are added together
+        int a = 5;
+        int b= -10;
+        int expectedResult=-5;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.add(a, b);
+
+        //: Then
+
+
+        Assert.assertEquals("should return sum of a+b", expectedResult, actualResult);
+
+
+    }
+
+    @Test
+    public void testAddTwoNegativeNumbers() {
+        //: Given:  given that two numbers are added together
+        int a = -5;
+        int b= -4;
+        int expectedResult=-9;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.add(a, b);
+
+        //: Then
+
+
+        Assert.assertEquals("should return sum of a+b", expectedResult, actualResult);
+
+
+    }
+
+    @Test
     public void testSubtract() {
         //: Given:  given that a number is being taken away from another
         int a = 6;
@@ -49,7 +89,45 @@ public class TestCalculator {
     }
 
     @Test
-    public void testmultiply() {
+    public void testSubtractWithNegative() {
+        //: Given:  given that a number is being taken away from another
+        int a = -6;
+        int b= 4;
+        int expectedResult=-10;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.subtract(a, b);
+
+        //: Then
+
+        Assert.assertEquals("should return a-b", expectedResult, actualResult);
+
+
+    }
+
+    @Test
+    public void testSubtractWithTwoNegatives() {
+        //: Given:  given that a number is being taken away from another
+        int a = -6;
+        int b= -4;
+        int expectedResult=-2;
+        Calculator calculator = new Calculator();
+
+
+        //: When
+        int actualResult= calculator.subtract(a, b);
+
+        //: Then
+
+        Assert.assertEquals("should return a-b", expectedResult, actualResult);
+
+
+    }
+
+    @Test
+    public void testMultiply() {
         //: Given:  given that two numbers are being multiplied together
         int a = 11;
         int b= 2;
@@ -68,7 +146,7 @@ public class TestCalculator {
     }
 
     @Test
-    public void testdivide() {
+    public void testDivide() {
         //: Given:  given that a number is being divided by another
         int a = 9;
         int b= 2;
